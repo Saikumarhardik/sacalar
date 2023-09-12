@@ -1,0 +1,27 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner hr = new Scanner(System.in);
+        System.out.print("rows emtha kavali");
+        int rows = hr.nextInt();
+        System.out.print("columns emtha kavali");
+        int columns = hr.nextInt();
+        
+        int[][] arr = new int[rows][columns];
+        
+        for(int i=0;i<=rows-1;i++){
+            for(int j=0;j<=columns-1;j++){
+                System.out.print("enter "+ i+1 +"row &" + j+1 + "column");
+                arr[i][j] = hr.nextInt();
+            }
+        }
+        for(int i=0;i<=rows-1;i++){
+            for(int j=0;j<=columns-1;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
