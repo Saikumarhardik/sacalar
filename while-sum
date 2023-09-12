@@ -1,0 +1,30 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter no of tcs needed: ");
+        int nt = sc.nextInt();
+        int count = 1;
+        while(count<=nt){
+            for(int i=0;i<=nt;i++){
+                System.out.println("enter the number: ");
+                int num = sc.nextInt();
+                int sum = 0;
+                while(num>=1){
+                    int abc = num%10;
+                    num = num/10;
+                    sum = sum + abc;
+                    
+                }
+                count++;
+                System.out.println(sum);
+                
+            }
+            
+        }
+        
+    
+    }
+}
