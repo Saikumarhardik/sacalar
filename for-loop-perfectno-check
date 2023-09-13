@@ -1,0 +1,30 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any number: ");
+        int numT = sc.nextInt();
+        int count=0;
+        for(int i=1;i<=numT;i++){
+            System.out.println("Enter no to check perfct: ");
+            int num1 = sc.nextInt();
+            int sum = 0;
+            int start =1;
+            while(start<num1){
+                if(num1%start==0){
+                    System.out.println(start+" ");
+                    sum = sum + start;
+                }
+                start++;
+            }
+            if(sum==num1){
+                System.out.println("yes");
+            }
+            else{
+               System.out.println("No"); 
+            }
+        }
+    }
+}
