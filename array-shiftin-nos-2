@@ -1,0 +1,40 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter array sixze ");
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        
+        
+        for(int i =0;i<=size-1;i++){
+            System.out.println("enter array value " + i);
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("enter array index ");
+        int position = sc.nextInt();
+        System.out.println("enter array replace ");
+        int replace = sc.nextInt();
+        
+        int naya[] = new int[size+1];
+        for(int i =0;i<=size;i++){
+            if(i<=position-2){
+                naya[i]=arr[i];
+            }
+            else if(i==position-1){
+                naya[i]=replace;
+            }
+            else{
+                naya[i]=arr[i-1];            }
+            
+        }
+        
+     
+        for(int i =0;i<=size;i++){
+            System.out.println(naya[i]+" ");
+        }
+        
+    }
+}
