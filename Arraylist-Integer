@@ -1,0 +1,24 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.ArrayList;
+class HelloWorld {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        ArrayList<Integer> arr2 = new ArrayList<Integer>();
+        arr.add(23);
+        arr.add(34);
+        arr.add(70);
+        arr.add(35);
+        
+        for(Integer i : arr){
+            if(i%5==0){
+                if(i%7==0){
+                    arr2.add(i);
+                }
+            }
+        }
+        System.out.print(arr2);
+        
+        
+    }
+}
