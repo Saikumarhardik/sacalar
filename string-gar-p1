@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "SDk@jb sv9_B/r1dU";
+        int count=0;
+        for(int i=0;i<=str.length()-1;i++){
+            if(!(str.charAt(i)>=65 && str.charAt(i)<=90)){
+                if(!(str.charAt(i)>=48 && str.charAt(i)<=57)){
+                    if(!(str.charAt(i)>=97 && str.charAt(i)<=122)){
+                        System.out.print(str.charAt(i));
+                        count++; 
+                        
+                    }
+                   
+                }
+                
+                
+            }
+            
+            
+        }
+        System.out.println();
+        System.out.println(count);
+    }
+}
